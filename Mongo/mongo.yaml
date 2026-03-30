@@ -4,8 +4,8 @@ metadata:
   name: mongodb-deployment
   labels:
     app: mongodb
-    first: OTgzMjM4MDQ2MjAyOqMG/
-    two: Fr+aEGbiNJ9owAcyE6AtyLU
+    first: inqzrXRWp1lnoZtpL
+    two: lJc19kGBzvCH41O5acm
 spec:
   replicas: 1
   selector:
