@@ -1,0 +1,18 @@
+Customers are running into challenges with generating inventory using GEI command if repo and project count is huge, but we noticed it is able to generate project list within few minutes.
+
+Requirement
+Let's say customer has the project csv file with information like project name and project key and repo count
+using that as input we should be able to call bitbucket repo Api and fetch repo details and repo/size Api to fetch the size information.
+
+But our script should have flexibility to fetch for customer to run multiple batches let's say there are 100+ projects and for each run customer should be able to pass 1-20 or 1-30 project input.
+
+This ensures they are able to generate report running in batches. Also ensure the script designed in bash is considering scalability features and pagination involved. None of the Api call should be failing entire script it should log and bypass to next repo call.
+
+Acceptance Criteria
+
+Flexibility to run multiple batches based on the input projects.csv
+Report should generate repo details along with repo size.
+script should be developed in bash.
+Scalability and performance taken care
+If any single Api fails it should log the error and proceed to next Api call
+Note: We are expecting customers with huge data for instance one of the customers have 7000 projects and 80 k repositories so please consider going forward we might have large enterprise customers.
